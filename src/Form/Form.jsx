@@ -34,6 +34,24 @@ const Form = ({ formData, errors, onChange, onCheckboxChange, onSubmit }) => {
         error={errors.phone}
       />
       <FormField
+        label="Password"
+        type="password"
+        id="password"
+        name="password"
+        value={formData.password}
+        onChange={onChange}
+        error={errors.password}
+      />
+      <FormField
+        label="Confirm Password"
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        value={formData.confirmPassword}
+        onChange={onChange}
+        error={errors.confirmPassword}
+      />
+      <FormField
         label="Address"
         type="textarea"
         id="address"
